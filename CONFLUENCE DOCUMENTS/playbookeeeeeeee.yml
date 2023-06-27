@@ -1,0 +1,3127 @@
+---
+
+#rm -rf main.yml
+# for i in $(cat a.sh)
+# do
+# echo "## password for user $i" >> main.yml
+# PASS=$(echo "$i-devops" | base64 )
+# echo "#########    ${PASS}$i"  >> main.yml
+# echo "###################" >> main.yml
+
+
+# done
+######################################################
+
+# /bin/bash
+# rm -rf playbook.yml
+# for i in $(cat a.sh)
+# do
+# cat <<EOF >> playbook.yml
+#     - name: user $i present
+#       ansible.builtin.user:
+#         name: $i
+#         password: "{{ 'password' | password_hash('sha512', 'mysecretsalt') }}"
+#         groups:
+#           - docker
+
+#         state: "present"
+#         shell: "/bin/bash"
+#         system: false
+#         create_home: true
+#         home: "/home/$i"
+#         comment: "$i"
+#         generate_ssh_key: true
+# EOF
+
+# echo "##################################################################################################" >> playbook.yml
+# echo "##################################################################################################" >> playbook.yml
+# done
+
+- name: create users
+  hosts: localhost
+  become: yes
+  become_user: root
+  tasks:
+
+                   - name: user s3cheikh1 present
+                     ansible.builtin.user:
+                       name: s3cheikh1
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjaGVpa2gxLWRldm9wcwo=s3cheikh1') }}"
+                       password: '$1$izChhctm$uBlnbtxscESUd4O03rxhK1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3cheikh1"
+                       comment: "s3cheikh1"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3kareen present
+                     ansible.builtin.user:
+                       name: s3kareen
+                       # password: "{{ 'password' | password_hash('sha512', 'czNrYXJlZW4tZGV2b3BzCg==s3kareen') }}"
+                       password: '$1$LqZNYaeK$foyvQZGtbMpoL.keGXsaN.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3kareen"
+                       comment: "s3kareen"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3nelly present
+                     ansible.builtin.user:
+                       name: s3nelly
+                       # password: "{{ 'password' | password_hash('sha512', 'czNuZWxseS1kZXZvcHMKs3nelly') }}"
+                       password: '$1$KzjgR0x4$IfJtgQ9p1qQvnyksyRb.j0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3nelly"
+                       comment: "s3nelly"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3sid present
+                     ansible.builtin.user:
+                       name: s3sid
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzaWQtZGV2b3BzCg==s3sid') }}"
+                       password: $1$32MklthQ$oJIp9WdTVg3/.1ZF3zlpg/
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3sid"
+                       comment: "s3sid"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3yannick present
+                     ansible.builtin.user:
+                       name: s3yannick
+                       # password: "{{ 'password' | password_hash('sha512', 'czN5YW5uaWNrLWRldm9wcwo=s3yannick') }}"
+                       password: '$1$vEOvYigc$/FuWRpPlIUY9lLaCEaz.T0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3yannick"
+                       comment: "s3yannick"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3don present
+                     ansible.builtin.user:
+                       name: s3don
+                       # password: "{{ 'password' | password_hash('sha512', 'czNkb24tZGV2b3BzCg==s3don') }}"
+                       password: '$1$2DseTAAG$DVeO5/5UlztnAQxFjlrKN/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3don"
+                       comment: "s3don"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3nyerepa present
+                     ansible.builtin.user:
+                       name: s3nyerepa
+                       # password: "{{ 'password' | password_hash('sha512', 'czNueWVyZXBhLWRldm9wcwo=s3nyerepa') }}"
+                       password: '$1$1z5kGVZE$4frkejz36u/tSEknw/6hs/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3nyerepa"
+                       comment: "s3nyerepa"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mbouna present
+                     ansible.builtin.user:
+                       name: s3mbouna
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtYm91bmEtZGV2b3BzCg==s3mbouna') }}"
+                       password: '$1$z/2udYdF$NwkpUL1zAYf9WVHGFMu/2.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mbouna"
+                       comment: "s3mbouna"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mylene1 present
+                     ansible.builtin.user:
+                       name: s3mylene1
+                       # password: "{{ 'password' | password_hash('sha512', 'czNteWxlbmUxLWRldm9wcwo=s3mylene1') }}"
+                       password: '$1$LkT3j/h8$voOz2xBS8ruZTGeSxbCSl1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mylene1"
+                       comment: "s3mylene1"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3kiliane present
+                     ansible.builtin.user:
+                       name: s3kiliane
+                       # password: "{{ 'password' | password_hash('sha512', 'czNraWxpYW5lLWRldm9wcwo=s3kiliane') }}"
+                       password: '$1$tjfS3Xdn$qbBVs2BMiZg6MLeOpH/9z.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3kiliane"
+                       comment: "s3kiliane"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3andre present
+                     ansible.builtin.user:
+                       name: s3andre
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhbmRyZS1kZXZvcHMKs3andre') }}"
+                       password: '$1$FnVd840K$A86Qb/rzzdhLaM498usXK0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3andre"
+                       comment: "s3andre"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3irene present
+                     ansible.builtin.user:
+                       name: s3irene
+                       # password: "{{ 'password' | password_hash('sha512', 'czNpcmVuZS1kZXZvcHMKs3irene') }}"
+                       password: '$1$CO1Qfm.z$KwEA4nE45argSWzJTEbHd0'
+               
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3irene"
+                       comment: "s3irene"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3jean present
+                     ansible.builtin.user:
+                       name: s3jean
+                       # password: "{{ 'password' | password_hash('sha512', 'czNqZWFuLWRldm9wcwo=s3jean') }}"
+                       password: '$1$.6ZICQ2p$h.rOM7mXTdR9hmCvB2Gmz.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3jean"
+                       comment: "s3jean"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3flavila present
+                     ansible.builtin.user:
+                       name: s3flavila
+                       # password: "{{ 'password' | password_hash('sha512', 'czNmbGF2aWxhLWRldm9wcwo=s3flavila') }}"
+                       password: '$1$Pm.3Z0Pv$/0klGoGBQYx/v3XaZcYxD/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3flavila"
+                       comment: "s3flavila"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3norbert present
+                     ansible.builtin.user:
+                       name: s3norbert
+                       # password: "{{ 'password' | password_hash('sha512', 'czNub3JiZXJ0LWRldm9wcwo=s3norbert') }}"
+                       password: '$1$PbwNNceP$rUe9ggWBS.djT8TONzqOw/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3norbert"
+                       comment: "s3norbert"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3alex present
+                     ansible.builtin.user:
+                       name: s3alex
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhbGV4LWRldm9wcwo=s3alex') }}"
+                       password: '$1$LaizLX7x$RUrNYg.o.b9zjlU2N.uxD/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3alex"
+                       comment: "s3alex"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3chris present
+                     ansible.builtin.user:
+                       name: s3chris
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjaHJpcy1kZXZvcHMKs3chris') }}"
+                       password: '$1$89ONqSAr$pw1guYXUyY7qC24aGzXNM.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3chris"
+                       comment: "s3chris"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3erick present
+                     ansible.builtin.user:
+                       name: s3erick
+                       # password: "{{ 'password' | password_hash('sha512', 'czNlcmljay1kZXZvcHMKs3erick') }}"
+                       password: '$1$lcd4aIri$BRZC0lMLGsdbRWPISdZsy.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3erick"
+                       comment: "s3erick"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3blaise present
+                     ansible.builtin.user:
+                       name: s3blaise
+                       # password: "{{ 'password' | password_hash('sha512', 'czNibGFpc2UtZGV2b3BzCg==s3blaise') }}"
+                       password: '$1$22nMN4IB$eJdqi4Bkm2qNN5T250Fuv0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3blaise"
+                       comment: "s3blaise"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3pascaline present
+                     ansible.builtin.user:
+                       name: s3pascaline
+                       # password: "{{ 'password' | password_hash('sha512', 'czNwYXNjYWxpbmUtZGV2b3BzCg==s3pascaline') }}"
+                       password: '$1$HjkUfLhd$6SiLSsy8DP1ePUlRXdkik1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3pascaline"
+                       comment: "s3pascaline"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3blondelle present
+                     ansible.builtin.user:
+                       name: s3blondelle
+                       # password: "{{ 'password' | password_hash('sha512', 'czNibG9uZGVsbGUtZGV2b3BzCg==s3blondelle') }}"
+                       password: 'czNibG9uZGVsbGUtZGV2b3BzCg==s3blondelle'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3blondelle"
+                       comment: "s3blondelle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mylene2 present
+                     ansible.builtin.user:
+                       name: s3mylene2
+                       # password: "{{ 'password' | password_hash('sha512', 'czNteWxlbmUyLWRldm9wcwo=s3mylene2') }}"
+                       password: '$1$/w6/IdID$qdTI9NDcArM9NHgqeH1E8/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mylene2"
+                       comment: "s3mylene2"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3gilles present
+                     ansible.builtin.user:
+                       name: s3gilles
+                       # password: "{{ 'password' | password_hash('sha512', 'czNnaWxsZXMtZGV2b3BzCg==s3gilles') }}"
+                       password: '$1$gChbn6RS$lIqHzoPr.Jr9PZMLmys3B0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3gilles"
+                       comment: "s3gilles"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3yvan present
+                     ansible.builtin.user:
+                       name: s3yvan
+                       # password: "{{ 'password' | password_hash('sha512', 'czN5dmFuLWRldm9wcwo=s3yvan') }}"
+                       password: '$1$bpUg4k5K$yaQ1dE5wgdhCUAAt88j8o1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3yvan"
+                       comment: "s3yvan"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3tiemeni present
+                     ansible.builtin.user:
+                       name: s3tiemeni
+                       # password: "{{ 'password' | password_hash('sha512', 'czN0aWVtZW5pLWRldm9wcwo=s3tiemeni') }}"
+                       password: $1$LLBM2dHJ$EbkhYIpDBHT7Vm464YCY91
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3tiemeni"
+                       comment: "s3tiemeni"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3elizabeth present
+                     ansible.builtin.user:
+                       name: s3elizabeth
+                       # password: "{{ 'password' | password_hash('sha512', 'czNlbGl6YWJldGgtZGV2b3BzCg==s3elizabeth') }}"
+                       password: $1$knJdoUH8$YYfAaktoxPJ9gDswN4VEQ.
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3elizabeth"
+                       comment: "s3elizabeth"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3kathy present
+                     ansible.builtin.user:
+                       name: s3kathy
+                       # password: "{{ 'password' | password_hash('sha512', 'czNrYXRoeS1kZXZvcHMKs3kathy') }}"
+                       password: '$1$Nj/e59qy$.YQRYmo0IjnvNRuxdrgte0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3kathy"
+                       comment: "s3kathy"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mokh present
+                     ansible.builtin.user:
+                       name: s3mokh
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtb2toLWRldm9wcwo=s3mokh') }}"
+                       password: '$1$P4Q35vyb$luY6UOh2dh76wm10FNnCS/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mokh"
+                       comment: "s3mokh"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3gene present
+                     ansible.builtin.user:
+                       name: s3gene
+                       # password: "{{ 'password' | password_hash('sha512', 'czNnZW5lLWRldm9wcwo=s3gene') }}"
+                       password: '$1$M40249Rh$Gmxn6.EyBRXZCKA2MS6oT/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3gene"
+                       comment: "s3gene"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3dan present
+                     ansible.builtin.user:
+                       name: s3dan
+                       # password: "{{ 'password' | password_hash('sha512', 'czNkYW4tZGV2b3BzCg==s3dan') }}"
+                       password: '$1$34TR1.Yn$RY6.ZdgsYpl.Vtsn0TI4k.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3dan"
+                       comment: "s3dan"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3feze present
+                     ansible.builtin.user:
+                       name: s3feze
+                       # password: "{{ 'password' | password_hash('sha512', 'czNmZXplLWRldm9wcwo=s3feze') }}"
+                       password: $1$oMSnqHyg$X.8bvY.YT0wIWMtTzarNa1
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3feze"
+                       comment: "s3feze"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3benjamine present
+                     ansible.builtin.user:
+                       name: s3benjamine
+                       # password: "{{ 'password' | password_hash('sha512', 'czNiZW5qYW1pbmUtZGV2b3BzCg==s3benjamine') }}"
+                       password: '$1$saCOiu/N$VykJTgepUYLq9zYyouxIx/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3benjamine"
+                       comment: "s3benjamine"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3murielle present
+                     ansible.builtin.user:
+                       name: s3murielle
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtdXJpZWxsZS1kZXZvcHMKs3murielle') }}"
+                       password: '$1$NPryCB4q$hGRfkJHB2V5.l1rk6ch2A.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3murielle"
+                       comment: "s3murielle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3linda present
+                     ansible.builtin.user:
+                       name: s3linda
+                       # password: "{{ 'password' | password_hash('sha512', 'czNsaW5kYS1kZXZvcHMKs3linda') }}"
+                       password: '$1$WBBIg73P$53RbTaV.Rhui/mIMtj3Bd0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3linda"
+                       comment: "s3linda"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3alpha present
+                     ansible.builtin.user:
+                       name: s3alpha
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhbHBoYS1kZXZvcHMKs3alpha') }}"
+                       password: '$1$wFztwchn$Lm0N4L/zM5d0nKUoyexkq.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3alpha"
+                       comment: "s3alpha"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3leslie present
+                     ansible.builtin.user:
+                       name: s3leslie
+                       # password: "{{ 'password' | password_hash('sha512', 'czNsZXNsaWUtZGV2b3BzCg==s3leslie') }}"
+                       password: '$1$epOs/MOV$Fw0N3vSzQ.ZPZNzPvz.WI/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3leslie"
+                       comment: "s3leslie"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3gisele present
+                     ansible.builtin.user:
+                       name: s3gisele
+                       # password: "{{ 'password' | password_hash('sha512', 'czNnaXNlbGUtZGV2b3BzCg==s3gisele') }}"
+                       password: '$1$FREd7n.k$6OkfIdFHnsr6Kzi1pDkNW1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3gisele"
+                       comment: "s3gisele"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3patrick1 present
+                     ansible.builtin.user:
+                       name: s3patrick1
+                       # password: "{{ 'password' | password_hash('sha512', 'czNwYXRyaWNrMS1kZXZvcHMKs3patrick1') }}"
+                       password: '$1$qFWQjGPT$JIWWfH0wFzO9SHz2VSl960'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3patrick1"
+                       comment: "s3patrick1"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3flavie present
+                     ansible.builtin.user:
+                       name: s3flavie
+                       # password: "{{ 'password' | password_hash('sha512', 'czNmbGF2aWUtZGV2b3BzCg==s3flavie') }}"
+                       password: '$1$9hJLdseu$W0p6DPja6zUAUywbteR/C/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3flavie"
+                       comment: "s3flavie"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3paulinus present
+                     ansible.builtin.user:
+                       name: s3paulinus
+                       # password: "{{ 'password' | password_hash('sha512', 'czNwYXVsaW51cy1kZXZvcHMKs3paulinus') }}"
+                       password: '$1$SRwG0mwl$MPezA07TzDWtBkulKnGCR1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3paulinus"
+                       comment: "s3paulinus"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mpeck present
+                     ansible.builtin.user:
+                       name: s3mpeck
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtcGVjay1kZXZvcHMKs3mpeck') }}"
+                       password: '$1$.zfR526e$Z3or0pnKmD0xaRc9W20CC0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mpeck"
+                       comment: "s3mpeck"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3nivelle present
+                     ansible.builtin.user:
+                       name: s3nivelle
+                       # password: "{{ 'password' | password_hash('sha512', 'czNuaXZlbGxlLWRldm9wcwo=s3nivelle') }}"
+                       password: '$1$X3NR6yiO$6XKDqaA.ANDOfBf2LvEY70'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3nivelle"
+                       comment: "s3nivelle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3carol present
+                     ansible.builtin.user:
+                       name: s3carol
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjYXJvbC1kZXZvcHMKs3carol') }}"
+                       password: '$1$EvxZu21E$MJbDSQSI0H8ypx02sGhzF/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3carol"
+                       comment: "s3carol"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3honore present
+                     ansible.builtin.user:
+                       name: s3honore
+                       # password: "{{ 'password' | password_hash('sha512', 'czNob25vcmUtZGV2b3BzCg==s3honore') }}"
+                       password: '$1$npm2rviU$AyOhYmzNlmf8B1WC9JOYn1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3honore"
+                       comment: "s3honore"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3fabrice present
+                     ansible.builtin.user:
+                       name: s3fabrice
+                       # password: "{{ 'password' | password_hash('sha512', 'czNmYWJyaWNlLWRldm9wcwo=s3fabrice') }}"
+                       password: '$1$h3MvAJcr$8AW25eHT.Pgp8L4pXN31c0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3fabrice"
+                       comment: "s3fabrice"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3coubis present
+                     ansible.builtin.user:
+                       name: s3coubis
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjb3ViaXMtZGV2b3BzCg==s3coubis') }}"
+                       password: '$1$WK3VYmeo$z5chukrMmX5sNgY15uzpU/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3coubis"
+                       comment: "s3coubis"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3fotso present
+                     ansible.builtin.user:
+                       name: s3fotso
+                       # password: "{{ 'password' | password_hash('sha512', 'czNmb3Rzby1kZXZvcHMKs3fotso') }}"
+                       password: '$1$fUEi.Ysl$hA.7rF5yRS0MLmriQpS7A1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3fotso"
+                       comment: "s3fotso"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3christelle present
+                     ansible.builtin.user:
+                       name: s3christelle
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjaHJpc3RlbGxlLWRldm9wcwo=s3christelle') }}"
+                       password: '$1$o1bNGsBX$LOihxD1N5y6Ca/6huM3UN/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3christelle"
+                       comment: "s3christelle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3juan present
+                     ansible.builtin.user:
+                       name: s3juan
+                       # password: "{{ 'password' | password_hash('sha512', 'czNqdWFuLWRldm9wcwo=s3juan') }}"
+                       password: '$1$ZPXqLk43$I6o4Jnnn/SXSNslGuf4NE.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3juan"
+                       comment: "s3juan"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3patrick2 present
+                     ansible.builtin.user:
+                       name: s3patrick2
+                       password: "{{ 'password' | password_hash('sha512', 'czNwYXRyaWNrMi1kZXZvcHMKs3patrick2') }}"
+                       password: '$1$FG1HjKI9$vpTH8eb/mXaRU5ARKbe3B.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3patrick2"
+                       comment: "s3patrick2"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3abou present
+                     ansible.builtin.user:
+                       name: s3abou
+                       # password: "{{ 'password' | password_hash('sha512', 'zNhYm91LWRldm9wcwo=s3abou') }}"
+                       password: '$1$yEoKHNmy$0gweag8bd1BSG46tvCpSD/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3abou"
+                       comment: "s3abou"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3booba present
+                     ansible.builtin.user:
+                       name: s3booba
+                       # password: "{{ 'password' | password_hash('sha512', 'czNib29iYS1kZXZvcHMKs3booba') }}"
+                       password: '$1$NSHxoXjt$T6zDKAWbxaTjXkfmWj/V4/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3booba"
+                       comment: "s3booba"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3cheikh2 present
+                     ansible.builtin.user:
+                       name: s3cheikh2
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjaGVpa2gyLWRldm9wcwo=s3cheikh2') }}"
+                       password: '$1$uFu24dFE$oK2R5WB8NIzxXVfDGvS2E0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3cheikh2"
+                       comment: "s3cheikh2"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3george present
+                     ansible.builtin.user:
+                       name: s3george
+                       # password: "{{ 'password' | password_hash('sha512', 'czNnZW9yZ2UtZGV2b3BzCg==s3george') }}"
+                       password: '$1$1d/bMQHt$O6HkK19E.FE/ygXI5srZs/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3george"
+                       comment: "s3george"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3sandra present
+                     ansible.builtin.user:
+                       name: s3sandra
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzYW5kcmEtZGV2b3BzCg==s3sandra') }}"
+                       password: '$1$48BQfnZd$/RBNMeSNfjjx9vM1g2mp40'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3sandra"
+                       comment: "s3sandra"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3agbor present
+                     ansible.builtin.user:
+                       name: s3agbor
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhZ2Jvci1kZXZvcHMKs3agbor') }}"
+                       password: '$1$/DjvyL2r$sUGNZQbsIizyAgf7FtLGt.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3agbor"
+                       comment: "s3agbor"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3rigo present
+                     ansible.builtin.user:
+                       name: s3rigo
+                       # password: "{{ 'password' | password_hash('sha512', 'czNyaWdvLWRldm9wcwo=s3rigo') }}"
+                       password: $1$AuPgaBAZ$ZBCORlgg048F.WLa/rZwq/
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3rigo"
+                       comment: "s3rigo"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3henriette present
+                     ansible.builtin.user:
+                       name: s3henriette
+                       # password: "{{ 'password' | password_hash('sha512', 'czNoZW5yaWV0dGUtZGV2b3BzCg==s3henriette') }}"
+                       password: '$1$wgFxRfjn$UsPu.qNSpn5nbfvyhBCbN/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3henriette"
+                       comment: "s3henriette"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3carine present
+                     ansible.builtin.user:
+                       name: s3carine
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjYXJpbmUtZGV2b3BzCg==s3carine') }}"
+                       password: '$1$dz.8.mhe$J1L4dvOjLzU2i3ofuVrQ7/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3carine"
+                       comment: "s3carine"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3kouame present
+                     ansible.builtin.user:
+                       name: s3kouame
+                       # password: "{{ 'password' | password_hash('sha512', 'czNrb3VhbWUtZGV2b3BzCg==s3kouame') }}"
+                       password: '$1$XjJyAJKA$ZVDvDbZlBRiz7xWacLmAP.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3kouame"
+                       comment: "s3kouame"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3stana present
+                     ansible.builtin.user:
+                       name: s3stana
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzdGFuYS1kZXZvcHMKs3stana') }}"
+                       password: '$1$cGsfKQjI$D1qrPrRmi8poP01gjCCqS1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3stana"
+                       comment: "s3stana"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3kiliane present
+                     ansible.builtin.user:
+                       name: s3kiliane
+                       # password: "{{ 'password' | password_hash('sha512', 'czNraWxpYW5lLWRldm9wcwo=s3kiliane') }}"
+                       password: '$1$BaYFfYeX$5BR0ABg.A2CrtfzlEJiC.1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3kiliane"
+                       comment: "s3kiliane"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mamadou present
+                     ansible.builtin.user:
+                       name: s3mamadou
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtYW1hZG91LWRldm9wcwo=s3mamadou') }}"
+                       password: '$1$fKwfVisz$DD3s7zlC8y/gA2C45YQsi1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mamadou"
+                       comment: "s3mamadou"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3lamotta present
+                     ansible.builtin.user:
+                       name: s3lamotta
+                       # password: "{{ 'password' | password_hash('sha512', 'czNsYW1vdHRhLWRldm9wcwo=s3lamotta') }}"
+                       password: $1$DkAY37bX$/QMViNw9nde.NAckwYMR2/
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3lamotta"
+                       comment: "s3lamotta"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mike present
+                     ansible.builtin.user:
+                       name: s3mike
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtaWtlLWRldm9wcwo=s3mike') }}"
+                       password: '$1$PbEQVFls$Zq9F0JOQizyE6varxF5nA0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mike"
+                       comment: "s3mike"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3souleymane present
+                     ansible.builtin.user:
+                       name: s3souleymane
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzb3VsZXltYW5lLWRldm9wcwo=s3souleymane') }}"
+                       password: '$1$sSOzSRTO$5l.vcezr1mOmcylxrHeH21'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3souleymane"
+                       comment: "s3souleymane"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3aline present
+                     ansible.builtin.user:
+                       name: s3aline
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhbGluZS1kZXZvcHMKs3aline') }}"
+                       password: '$1$uZDM4fQx$Engng8qBeQJhz95pZyk4F1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3aline"
+                       comment: "s3aline"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3bakala present
+                     ansible.builtin.user:
+                       name: s3bakala
+                       # password: "{{ 'password' | password_hash('sha512', 'czNiYWthbGEtZGV2b3BzCg==s3bakala') }}"
+                       password: '$1$8mn6kTTv$l4pEznchQzMNQzE.fLB1m.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3bakala"
+                       comment: "s3bakala"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3soto present
+                     ansible.builtin.user:
+                       name: s3soto
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzb3RvLWRldm9wcwo=s3soto') }}"
+                       password: '$1$LqYZuAYZ$snR0UodyfB6Hm.kA09W.A.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3soto"
+                       comment: "s3soto"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user S3ida present
+                     ansible.builtin.user:
+                       name: S3ida
+                       # password: "{{ 'password' | password_hash('sha512', 'UzNpZGEtZGV2b3BzCg==S3ida') }}"
+                       password: '$1$MdtM3/rI$ziglY8MIhNmF7SKUYz64U1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/S3ida"
+                       comment: "S3ida"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3daouda present
+                     ansible.builtin.user:
+                       name: s3daouda
+                       # password: "{{ 'password' | password_hash('sha512', 'czNkYW91ZGEtZGV2b3BzCg==s3daouda') }}"
+                       password: '$1$nOTxc1hs$.TdF56UQW/anll4GKPvy6.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3daouda"
+                       comment: "s3daouda"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3ornella present
+                     ansible.builtin.user:
+                       name: s3ornella
+                       # password: "{{ 'password' | password_hash('sha512', 'czNvcm5lbGxhLWRldm9wcwo=s3ornella') }}"
+                       password: '$1$PW.NkA2w$Ow4YdelP5vagLvis5T1Qx1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3ornella"
+                       comment: "s3ornella"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mullette present
+                     ansible.builtin.user:
+                       name: s3mullette
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtdWxsZXR0ZS1kZXZvcHMKs3mullette') }}"
+                       password: '$1$BWphFx4a$RHUpmcIyVVx4qsRpMGK1x.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mullette"
+                       comment: "s3mullette"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3carolle present
+                     ansible.builtin.user:
+                       name: s3carolle
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjYXJvbGxlLWRldm9wcwo=s3carolle') }}"
+                       password:
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3carolle"
+                       comment: "s3carolle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3franck present
+                     ansible.builtin.user:
+                       name: s3franck
+                       # password: "{{ 'password' | password_hash('sha512', 'czNmcmFuY2stZGV2b3BzCg==s3franck') }}"
+                       password: '$1$zFqiiDpq$BQOu.27i2Ggmcvx.Erk9c/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3franck"
+                       comment: "s3franck"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3sam present
+                     ansible.builtin.user:
+                       name: s3sam
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzYW0tZGV2b3BzCg==s3sam') }}"
+                       password: '$1$WceG2kVh$.l7.IAaQMjCTzmYdoqMH/.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3sam"
+                       comment: "s3sam"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3pierroz present
+                     ansible.builtin.user:
+                       name: s3pierroz
+                       # password: "{{ 'password' | password_hash('sha512', 'czNwaWVycm96LWRldm9wcwo=s3pierroz') }}"
+                       password: '$1$ObC2.Sd6$7leD5rH67Hwa1.1E1cKpC0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3pierroz"
+                       comment: "s3pierroz"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3ulrich present
+                     ansible.builtin.user:
+                       name: s3ulrich
+                       # password: "{{ 'password' | password_hash('sha512', 'czN1bHJpY2gtZGV2b3BzCg==s3ulrich') }}"
+                       password: '$1$Ab.sLh.x$melWsEFNue20zamOQemfv1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3ulrich"
+                       comment: "s3ulrich"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3gislain present
+                     ansible.builtin.user:
+                       name: s3gislain
+                       # password: "{{ 'password' | password_hash('sha512', 'czNnaXNsYWluLWRldm9wcwo=s3gislain') }}"
+                       password: '$1$Iq9/ddr8$hfzsSf77T5Ncq9/pGd8TC.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3gislain"
+                       comment: "s3gislain"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3anneguillaine present
+                     ansible.builtin.user:
+                       name: s3anneguillaine
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhbm5lZ3VpbGxhaW5lLWRldm9wcwo=s3anneguillaine') }}"
+                       password: '$1$oRBciS9Z$3TuR7fd9thjBRuwjmedWK0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3anneguillaine"
+                       comment: "s3anneguillaine"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3lalidja present
+                     ansible.builtin.user:
+                       name: s3lalidja
+                       # password: "{{ 'password' | password_hash('sha512', 'czNsYWxpZGphLWRldm9wcwo=s3lalidja') }}"
+                       password: '$1$kRpXQVWD$q6xpHCIyghNcuL5jAwqxd0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3lalidja"
+                       comment: "s3lalidja"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3arnold present
+                     ansible.builtin.user:
+                       name: s3arnold
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhcm5vbGQtZGV2b3BzCg==s3arnold') }}"
+                       password: '$1$PO/vTqqr$m2gZ.7YlsTaCG1LRoRx18.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3arnold"
+                       comment: "s3arnold"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3chidiebere present
+                     ansible.builtin.user:
+                       name: s3chidiebere
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjaGlkaWViZXJlLWRldm9wcwo=s3chidiebere') }}"
+                       password: '$1$YUe3Lfts$Lt9udxqoFFBuupdotJ80H0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3chidiebere"
+                       comment: "s3chidiebere"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mame present
+                     ansible.builtin.user:
+                       name: s3mame
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtYW1lLWRldm9wcwo=s3mame') }}"
+                       password: '$1$qHavChNI$N8NCJPQmyw1RkRLWkpM9q.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mame"
+                       comment: "s3mame"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3sylvain present
+                     ansible.builtin.user:
+                       name: s3sylvain
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzeWx2YWluLWRldm9wcwo=s3sylvain') }}"
+                       password: '$1$proE4Iq6$nnbIENBBaABNI7orFSrj7.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3sylvain"
+                       comment: "s3sylvain"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3yves present
+                     ansible.builtin.user:
+                       name: s3yves
+                       # password: "{{ 'password' | password_hash('sha512', 'czN5dmVzLWRldm9wcwo=s3yves') }}"
+                       password: '$1$MHrA2gAZ$j8tn2VpNbGhcYIwKcl1/x/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3yves"
+                       comment: "s3yves"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3rodrigue present
+                     ansible.builtin.user:
+                       name: s3rodrigue
+                       # password: "{{ 'password' | password_hash('sha512', 'czNyb2RyaWd1ZS1kZXZvcHMKs3rodrigue') }}"
+                       password: '$1$G83UKbZr$qno3GPOudERexZX4CvKOI1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3rodrigue"
+                       comment: "s3rodrigue"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3cedric present
+                     ansible.builtin.user:
+                       name: s3cedric
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjZWRyaWMtZGV2b3BzCg==s3cedric') }}"
+                       password: '$1$3SJawEJX$fTK0.8mEJlxvHUYJmZMCZ/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3cedric"
+                       comment: "s3cedric"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3rene present
+                     ansible.builtin.user:
+                       name: s3rene
+                       # password: "{{ 'password' | password_hash('sha512', 'czNyZW5lLWRldm9wcwo=s3rene') }}"
+                       password: '$1$LX1qlJj5$GdCKsTIM3HBSEzrvGihz8.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3rene"
+                       comment: "s3rene"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3davy present
+                     ansible.builtin.user:
+                       name: s3davy
+                       # password: "{{ 'password' | password_hash('sha512', 'czNkYXZ5LWRldm9wcwo=s3davy') }}"
+                       password: '$1$mhNJSnOK$wEi5DOlAJx5.8YZPZ4m760'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3davy"
+                       comment: "s3davy"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3adnan present
+                     ansible.builtin.user:
+                       name: s3adnan
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhZG5hbi1kZXZvcHMKs3adnan') }}"
+                       password: '$1$xKH1kr5O$FUA7wJ93MujTU6tdCNctt0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3adnan"
+                       comment: "s3adnan"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3prince present
+                     ansible.builtin.user:
+                       name: s3prince
+                       # password: "{{ 'password' | password_hash('sha512', 'czNwcmluY2UtZGV2b3BzCg==s3prince') }}"
+                       password: '$1$Kt0BA5nK$TMhYUQH5aTJC30goG2t8y.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3prince"
+                       comment: "s3prince"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3christele present
+                     ansible.builtin.user:
+                       name: s3christele
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjaHJpc3RlbGUtZGV2b3BzCg==s3christele') }}"
+                       password: '$1$Vy6HFTYg$m8tZG1yH6SJ0cfOpQ0w26.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3christele"
+                       comment: "s3christele"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3emmanuel present
+                     ansible.builtin.user:
+                       name: s3emmanuel
+                       # password: "{{ 'password' | password_hash('sha512', 'czNlbW1hbnVlbC1kZXZvcHMKs3emmanuel') }}"
+                       password: '$1$To0Nb4xA$j3oJ926GrzOfJwAHONT6c0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3emmanuel"
+                       comment: "s3emmanuel"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3serge present
+                     ansible.builtin.user:
+                       name: s3serge
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzZXJnZS1kZXZvcHMKs3serge') }}"
+                       password: '$1$x3GFBrdU$ohmkn0kylYudGW2iRcBTi.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3serge"
+                       comment: "s3serge"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3mashoud present
+                     ansible.builtin.user:
+                       name: s3mashoud
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtYXNob3VkLWRldm9wcwo=s3mashoud') }}"
+                       password: '$1$6MnnHuES$gO5ccmVZILFtZKLgm3R9P/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3mashoud"
+                       comment: "s3mashoud"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3corinne present
+                     ansible.builtin.user:
+                       name: s3corinne
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjb3Jpbm5lLWRldm9wcwo=s3corinne') }}"
+                       password: '$1$DNLeQTJS$NAQdeWTDyxnchhKwvjTiu/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3corinne"
+                       comment: "s3corinne"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3christele present
+                     ansible.builtin.user:
+                       name: s3christele
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjaHJpc3RlbGUtZGV2b3BzCg==s3christele') }}"
+                       password: '$1$QBYwNV9S$/ALi.oGgOL.DiKC8yHkIZ1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3christele"
+                       comment: "s3christele"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3boni present
+                     ansible.builtin.user:
+                       name: s3boni
+                       # password: "{{ 'password' | password_hash('sha512', 'czNib25pLWRldm9wcwo=s3boni') }}"
+                       password: '$1$vzwvu8ks$p8WnnQ92dh06qBMj7JGlt.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3boni"
+                       comment: "s3boni"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3nathalie present
+                     ansible.builtin.user:
+                       name: s3nathalie
+                       # password: "{{ 'password' | password_hash('sha512', 'czNuYXRoYWxpZS1kZXZvcHMKs3nathalie') }}"
+                       password: '$1$m0UxCU02$zmiGVKMddpLTAFf/Wzs8E1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3nathalie"
+                       comment: "s3nathalie"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3paul present
+                     ansible.builtin.user:
+                       name: s3paul
+                       # password: "{{ 'password' | password_hash('sha512', 'czNwYXVsLWRldm9wcwo=s3paul') }}"
+                       password: '$1$rdomK6DN$xsmrVUC9NxmQpy6efYtSF.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3paul"
+                       comment: "s3paul"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3auguste present
+                     ansible.builtin.user:
+                       name: s3auguste
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhdWd1c3RlLWRldm9wcwo=s3auguste') }}"
+                       password: '$1$cqH.H7ns$PtPwZfMQDL6BpP/Zj4FZB.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3auguste"
+                       comment: "s3auguste"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3ramath present
+                     ansible.builtin.user:
+                       name: s3ramath
+                       # password: "{{ 'password' | password_hash('sha512', 'czNyYW1hdGgtZGV2b3BzCg==s3ramath') }}"
+                       password: '$1$VEyx/fjy$uLeKvsWCYZHBWZ3RC31Ta0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3ramath"
+                       comment: "s3ramath"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3christian present
+                     ansible.builtin.user:
+                       name: s3christian
+                       # password: "{{ 'password' | password_hash('sha512', 'czNjaHJpc3RpYW4tZGV2b3BzCg==s3christian') }}"
+                       password: '$1$UjZMt07.$6lg/su3X3qKfOFVoPv12c/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3christian"
+                       comment: "s3christian"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3bertrand present
+                     ansible.builtin.user:
+                       name: s3bertrand
+                       # password: "{{ 'password' | password_hash('sha512', 'czNiZXJ0cmFuZC1kZXZvcHMKs3bertrand') }}"
+                       password: '$1$DcBfLNQ/$NDxVuZkzqc4RrI7K7BLwQ/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3bertrand"
+                       comment: "s3bertrand"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3nestor present
+                     ansible.builtin.user:
+                       name: s3nestor
+                       # password: "{{ 'password' | password_hash('sha512', 'czNuZXN0b3ItZGV2b3BzCg==s3nestor') }}"
+                       password: '$1$QIJWaHCs$Uy3hHC3PxIDF9f3HfeZFB/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3nestor"
+                       comment: "s3nestor"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3lucy present
+                     ansible.builtin.user:
+                       name: s3lucy
+                       # password: "{{ 'password' | password_hash('sha512', 'czNsdWN5LWRldm9wcwo=s3lucy') }}"
+                       password: '$1$kSwkHNr7$Q1GY/EusGTvM7vp9TiZk7/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3lucy"
+                       comment: "s3lucy"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3victor present
+                     ansible.builtin.user:
+                       name: s3victor
+                       # password: "{{ 'password' | password_hash('sha512', 'czN2aWN0b3ItZGV2b3BzCg==s3victor') }}"
+                       password:
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3victor"
+                       comment: "s3victor"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3alexi present
+                     ansible.builtin.user:
+                       name: s3alexi
+                       # password: "{{ 'password' | password_hash('sha512', 'czNhbGV4aS1kZXZvcHMKs3alexi') }}"
+                       password: '$1$g8mMxNUO$tHqppvRuViXyqXYxs872U0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3alexi"
+                       comment: "s3alexi"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3cyprien present
+                     ansible.builtin.user:
+                       name: s3cyprien
+                       password: "{{ 'password' | password_hash('sha512', 'czNjeXByaWVuLWRldm9wcwo=s3cyprien') }}"
+                       password: $1$g9qkiFr5$WX.9.IpHOTtM0UEAoqKGR0
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3cyprien"
+                       comment: "s3cyprien"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user s3student present
+                     ansible.builtin.user:
+                       name: s3student
+                       # password: "{{ 'password' | password_hash('sha512', 'czNzdHVkZW50LWRldm9wcwo=s3student') }}"
+                       password: '$1$iR3y0eU9$YrTojRbS00tceB/geLj8D0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3student"
+                       comment: "s3student"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user blandine present
+                     ansible.builtin.user:
+                       name: blandine
+                       # password: "{{ 'password' | password_hash('sha512', 'YmxhbmRpbmUtZGV2b3BzCg==blandine') }}"
+                       password: '$1$zGMrDlFs$kEGZowRniS.737YrHu6hH/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/blandine"
+                       comment: "blandine"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user cedric present
+                     ansible.builtin.user:
+                       name: cedric
+                       # password: "{{ 'password' | password_hash('sha512', 'Y2VkcmljLWRldm9wcwo=cedric') }}"
+                       password: '$1$uICfmrKu$gGAbjtFbzwWMnpVzm7rP.1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/cedric"
+                       comment: "cedric"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user nigieu present
+                     ansible.builtin.user:
+                       name: nigieu
+                       # password: "{{ 'password' | password_hash('sha512', 'bmlnaWV1LWRldm9wcwo=nigieu') }}"
+                       password: '$1$reVSCssl$TnO5dUaBM3jYdZpUdEmBd/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/nigieu"
+                       comment: "nigieu"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user claude present
+                     ansible.builtin.user:
+                       name: claude
+                       # password: "{{ 'password' | password_hash('sha512', 'Y2xhdWRlLWRldm9wcwo=claude') }}"
+                       password: '$1$Hw07COUd$eWpeRZst.wH0gt5xn/Eep/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/claude"
+                       comment: "claude"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user ekow present
+                     ansible.builtin.user:
+                       name: ekow
+                       # password: "{{ 'password' | password_hash('sha512', 'ZWtvdy1kZXZvcHMKekow') }}"
+                       password: '$1$UizdzVZf$oM74OhHCCts0emnfLlhG70'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/ekow"
+                       comment: "ekow"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user georges present
+                     ansible.builtin.user:
+                       name: georges
+                       # password: "{{ 'password' | password_hash('sha512', 'Z2Vvcmdlcy1kZXZvcHMKgeorges') }}"
+                       password: '$1$ge4aAhZ0$UMObqPEj1lHLHg8QaAEJz1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/georges"
+                       comment: "georges"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user geradine present
+                     ansible.builtin.user:
+                       name: geradine
+                       # password: "{{ 'password' | password_hash('sha512', 'Z2VyYWRpbmUtZGV2b3BzCg==geradine') }}"
+                       password: '$1$WYiuGAl2$UvaFlMXbCptqOaGAEECAp/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/geradine"
+                       comment: "geradine"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user gislaine present
+                     ansible.builtin.user:
+                       name: gislaine
+                       # password: "{{ 'password' | password_hash('sha512', 'Z2lzbGFpbmUtZGV2b3BzCg==gislaine') }}"
+                       password: '$1$rwNRZ6/4$TqNnY5I2M8agMCE3v0TdO/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/gislaine"
+                       comment: "gislaine"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user igor present
+                     ansible.builtin.user:
+                       name: igor
+                       # password: "{{ 'password' | password_hash('sha512', 'aWdvci1kZXZvcHMKigor') }}"
+                       password: '$1$T1uTp2k5$lqFjBknVw2gtk4swXJhQS.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/igor"
+                       comment: "igor"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user kelly present
+                     ansible.builtin.user:
+                       name: kelly
+                       # password: "{{ 'password' | password_hash('sha512', 'a2VsbHktZGV2b3BzCg==kelly') }}"
+                       password: '$1$al5nyJPC$4cwA8/xT1dRrliduo.M8q/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/kelly"
+                       comment: "kelly"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user leonel present
+                     ansible.builtin.user:
+                       name: leonel
+                       # password: "{{ 'password' | password_hash('sha512', 'bGVvbmVsLWRldm9wcwo=leonel') }}"
+                       password: '$1$HRxgWQA/$djd/dXA9ikALBF/lCys3R/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/leonel"
+                       comment: "leonel"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user achille present
+                     ansible.builtin.user:
+                       name: achille
+                       # password: "{{ 'password' | password_hash('sha512', 'YWNoaWxsZS1kZXZvcHMKachille') }}"
+                       password: '$1$Atd/qHCI$il9rzIPdCioDViyGjGtj71'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/achille"
+                       comment: "achille"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user linda present
+                     ansible.builtin.user:
+                       name: linda
+                       # password: "{{ 'password' | password_hash('sha512', 'bGluZGEtZGV2b3BzCg==linda') }}"
+                       password: '$1$y4aBDcb8$b2p/VFM3QCmocvT.5yF0z1'
+                       groups:
+                         - docker
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/linda"
+                       comment: "linda"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user michelle present
+                     ansible.builtin.user:
+                       name: michelle
+                       # password: "{{ 'password' | password_hash('sha512', 'bWljaGVsbGUtZGV2b3BzCg==michelle') }}"
+                       password: '$1$jPDD01pT$rnzgBknGSK2YCtWUmbQE20'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/michelle"
+                       comment: "michelle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user amy present
+                     ansible.builtin.user:
+                       name: amy
+                       # password: "{{ 'password' | password_hash('sha512', 'YW15LWRldm9wcwo=amy') }}"
+                       password:  '$1$MPFro72K$dG8fcNXZhB7gLw9Gatyvc1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/amy"
+                       comment: "amy"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user nelly present
+                     ansible.builtin.user:
+                       name: nelly
+                       # password: "{{ 'password' | password_hash('sha512', 'bmVsbHktZGV2b3BzCg==nelly') }}"
+                       password: '$1$rnzCRg2X$ii3Xv1vhQ68YsZDbmrNO/0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/nelly"
+                       comment: "nelly"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user peter present
+                     ansible.builtin.user:
+                       name: peter
+                       # password: "{{ 'password' | password_hash('sha512', 'cGV0ZXItZGV2b3BzCg==peter') }}"
+                       password: '$1$OQG8B7./$xVc7SiOntrZvgjfnpKgBw.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/peter"
+                       comment: "peter"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user rodrigue present
+                     ansible.builtin.user:
+                       name: rodrigue
+                       # password: "{{ 'password' | password_hash('sha512', 'cm9kcmlndWUtZGV2b3BzCg==rodrigue') }}"
+                       password: '$1$zAMGOuUl$Ss9Coc6Hs4GT12nxJ.VWP0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/rodrigue"
+                       comment: "rodrigue"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user ousmane present
+                     ansible.builtin.user:
+                       name: ousmane
+                       # password: "{{ 'password' | password_hash('sha512', 'b3VzbWFuZS1kZXZvcHMKousmane') }}"
+                       password: '$1$7Bnawtcy$Q2CEHWxM9n3tRzN.0LpA3.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/ousmane"
+                       comment: "ousmane"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user steph present
+                     ansible.builtin.user:
+                       name: steph
+                       # password: "{{ 'password' | password_hash('sha512', 'c3RlcGgtZGV2b3BzCg==steph') }}"
+                       password: '$1$cHiLb.Z5$M7xmGaNe7xlM7abhhxIep1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/steph"
+                       comment: "steph"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user will present
+                     ansible.builtin.user:
+                       name: will
+                       # password: "{{ 'password' | password_hash('sha512', 'd2lsbC1kZXZvcHMKwill') }}"
+                       password:  '$1$/.mb1g8u$AGTMmJZ1WLbPmidJjOloI0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/will"
+                       comment: "will"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user valdes present
+                     ansible.builtin.user:
+                       name: valdes
+                       # password: "{{ 'password' | password_hash('sha512', 'dmFsZGVzLWRldm9wcwo=valdes') }}"
+                       password: 'dmFsZGVzLWRldm9wcwo=valdes'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/valdes"
+                       comment: "valdes"
+                       generate_ssh_key: true
+
+                   - name: user jenny present
+                     ansible.builtin.user:
+                       name: jenny
+                       # password: "{{ 'password' | password_hash('sha512', 'amVubnktZGV2b3BzCg==jenny') }}"
+                       password: '$1$tSqxLvKA$oByAnpM4RfszvA6jNdgAK.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/jenny"
+                       comment: "jenny"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user valdez present
+                     ansible.builtin.user:
+                       name: valdez
+                       # password: "{{ 'password' | password_hash('sha512', 'dmFsZGV6LWRldm9wcwo=valdez') }}"
+                       password: '$1$xi5VLuu5$a1R1Gq.WU/U4T7wDRL0dA1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/valdez"
+                       comment: "valdez"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user arnaude present
+                     ansible.builtin.user:
+                       name: arnaude
+                       # password: "{{ 'password' | password_hash('sha512', 'YXJuYXVkZS1kZXZvcHMKarnaude') }}"
+                       password: '$1$SzOZ8ulp$NdsOOSV8QHH32gMJX35U00'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/arnaude"
+                       comment: "arnaude"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user bernice present
+                     ansible.builtin.user:
+                       name: bernice
+                       # password: "{{ 'password' | password_hash('sha512', 'YmVybmljZS1kZXZvcHMKbernice') }}"
+                       password: '$1$6Bn2Gtwr$VjaMvZIld9qU1Aaf41NuF.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/bernice"
+                       comment: "bernice"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user alfred present
+                     ansible.builtin.user:
+                       name: alfred
+                       # password: "{{ 'password' | password_hash('sha512', 'YWxmcmVkLWRldm9wcwo=alfred') }}"
+                       password: '$1$mgqWKlBr$AXcw19z62gmH3YLEYfehl.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/alfred"
+                       comment: "alfred"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user ivo present
+                     ansible.builtin.user:
+                       name: ivo
+                       # password: "{{ 'password' | password_hash('sha512', 'aXZvLWRldm9wcwo=ivo') }}"
+                       password: '$1$44xgEiQj$qcsjce8F.lHegQGNNivG.0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/ivo"
+                       comment: "ivo"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user philomene present
+                     ansible.builtin.user:
+                       name: philomene
+                       # password: "{{ 'password' | password_hash('sha512', 'cGhpbG9tZW5lLWRldm9wcwo=philomene') }}"
+                       password: '$1$GC4/Tjxb$B0Oh0euaZdJY3jRVfEaU.0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/philomene"
+                       comment: "philomene"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user stephane present
+                     ansible.builtin.user:
+                       name: stephane
+                       # password: "{{ 'password' | password_hash('sha512', 'c3RlcGhhbmUtZGV2b3BzCg==stephane') }}"
+                       password: '$1$z17s/IRr$rKvpqJ58m65psl6F1J3xK1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/stephane"
+                       comment: "stephane"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user noel present
+                     ansible.builtin.user:
+                       name: noel
+                       # password: "{{ 'password' | password_hash('sha512', 'bm9lbC1kZXZvcHMKnoel') }}"
+                       password: '$1$QWDFra6O$FPd3wILQW3BvWFXplp4bd.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/noel"
+                       comment: "noel"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user papys present
+                     ansible.builtin.user:
+                       name: papys
+                       # password: "{{ 'password' | password_hash('sha512', 'cGFweXMtZGV2b3BzCg==papys') }}"
+                       password: '$1$fEXgt1K1$jjUuIQ/BRv3xXHEF7Kurv0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/papys"
+                       comment: "papys"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user idrissa present
+                     ansible.builtin.user:
+                       name: idrissa
+                       # password: "{{ 'password' | password_hash('sha512', 'aWRyaXNzYS1kZXZvcHMKidrissa') }}"
+                       password: '$1$61RayeYx$m8Vm9EPZ.bkwlS3sughtP1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/idrissa"
+                       comment: "idrissa"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user lesly present
+                     ansible.builtin.user:
+                       name: lesly
+                       # password: "{{ 'password' | password_hash('sha512', 'bGVzbHktZGV2b3BzCg==lesly') }}"
+                       password: '$1$LwtjUOo1$IX2guSZKR/RNY0Jn7WOHh1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/lesly"
+                       comment: "lesly"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user adele present
+                     ansible.builtin.user:
+                       name: adele
+                       # password: "{{ 'password' | password_hash('sha512', 'YWRlbGUtZGV2b3BzCg==adele') }}"
+                       password: '$1$5W0jBMmp$6BNc2DhQXwLgrzsz9GoiD.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/adele"
+                       comment: "adele"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user steve present
+                     ansible.builtin.user:
+                       name: steve
+                       # password: "{{ 'password' | password_hash('sha512', 'c3RldmUtZGV2b3BzCg==steve') }}"
+                       password: '$1$dUzWA7wi$2YDewQ8kcCH9Z82MdD009/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/steve"
+                       comment: "steve"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user duclair present
+                     ansible.builtin.user:
+                       name: duclair
+                       # password: "{{ 'password' | password_hash('sha512', 'ZHVjbGFpci1kZXZvcHMKduclair') }}"
+                       password: '$1$l7qAVrDK$6mzkncA4l9ZUV4fr3WTtb/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/duclair"
+                       comment: "duclair"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user mireille present
+                     ansible.builtin.user:
+                       name: mireille
+                       # password: "{{ 'password' | password_hash('sha512', 'bWlyZWlsbGUtZGV2b3BzCg==mireille') }}"
+                       password: '$1$ldZE1xcu$66P9ztxrtGPeztiYp3/7W0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/mireille"
+                       comment: "mireille"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user chefer present
+                     ansible.builtin.user:
+                       name: chefer
+                       # password: "{{ 'password' | password_hash('sha512', 'Y2hlZmVyLWRldm9wcwo=chefer') }}"
+                       password: '$1$4Bfc7Z9/$dsH/jY7ynSaY98MCdYijU0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/chefer"
+                       comment: "chefer"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user sam present
+                     ansible.builtin.user:
+                       name: sam
+                       # password: "{{ 'password' | password_hash('sha512', 'c2FtLWRldm9wcwo=sam') }}"
+                       password: '$1$L1653a5e$gdS5r3apcyhFBhj49XsOk1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/sam"
+                       comment: "sam"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user kareen present
+                     ansible.builtin.user:
+                       name: kareen
+                       # password: "{{ 'password' | password_hash('sha512', 'a2FyZWVuLWRldm9wcwo=kareen') }}"
+                       password: '$1$XC1YHyOh$DiwgiJpc3DI.vRZ08dbVJ/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/kareen"
+                       comment: "kareen"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user jires present
+                     ansible.builtin.user:
+                       name: jires
+                       # password: "{{ 'password' | password_hash('sha512', 'amlyZXMtZGV2b3BzCg==jires') }}"
+                       password: '$1$J/osH99s$GHwH0nctBaPdjk7NgHB0U1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/jires"
+                       comment: "jires"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user biky present
+                     ansible.builtin.user:
+                       name: biky
+                       # password: "{{ 'password' | password_hash('sha512', 'YmlreS1kZXZvcHMKbiky') }}"
+                       password: '$1$jZrAKf95$XD2TgiMKPRAqnAfoWrMmn/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/biky"
+                       comment: "biky"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user abdou present
+                     ansible.builtin.user:
+                       name: abdou
+                       # password: "{{ 'password' | password_hash('sha512', 'YWJkb3UtZGV2b3BzCg==abdou') }}"
+                       password: '$1$WNxYKL/i$Fa9Mg7GKBmU.JC3QaLuW4/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/abdou"
+                       comment: "abdou"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user kantin present
+                     ansible.builtin.user:
+                       name: kantin
+                       # password: "{{ 'password' | password_hash('sha512', 'a2FudGluLWRldm9wcwo=kantin') }}"
+                       password: '$1$sLYrg9dL$wLokjMRc7QwMd2GPJJbRa.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/kantin"
+                       comment: "kantin"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user carolle present
+                     ansible.builtin.user:
+                       name: carolle
+                       # password: "{{ 'password' | password_hash('sha512', 'Y2Fyb2xsZS1kZXZvcHMKcarolle') }}"
+                       password: '$1$1Q8ZSIKs$Hi44TIkgC.1ROmMO1PPml1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/carolle"
+                       comment: "carolle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user joel present
+                     ansible.builtin.user:
+                       name: joel
+                       # password: "{{ 'password' | password_hash('sha512', 'am9lbC1kZXZvcHMKjoel') }}"
+                       password: '$1$L7lLhlJ6$gY5IeUVi3cE8iaNN9vvAW0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/joel"
+                       comment: "joel"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user simplice present
+                     ansible.builtin.user:
+                       name: simplice
+                       # password: "{{ 'password' | password_hash('sha512', 'c2ltcGxpY2UtZGV2b3BzCg==simplice') }}"
+                       password: '$1$coXvrye3$Drfsj8ZyoH4zqAqVXzZ5Y.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/simplice"
+                       comment: "simplice"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user lucy present
+                     ansible.builtin.user:
+                       name: lucy
+                       # password: "{{ 'password' | password_hash('sha512', 'bHVjeS1kZXZvcHMKlucy') }}"
+                       password: '$1$dDsVgE8Y$s/HlD5750AoNews0rodMH0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/lucy"
+                       comment: "lucy"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user jeanne present
+                     ansible.builtin.user:
+                       name: jeanne
+                       # password: "{{ 'password' | password_hash('sha512', 'amVhbm5lLWRldm9wcwo=jeanne') }}"
+                       password: '$1$RBwL4VxX$ovaN2Gp.pkqel4Qv/4bK40'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/jeanne"
+                       comment: "jeanne"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user blondelle present
+                     ansible.builtin.user:
+                       name: blondelle
+                       # password: "{{ 'password' | password_hash('sha512', 'YmxvbmRlbGxlLWRldm9wcwo=blondelle') }}"
+                       password: '$1$84.XKT4W$9SgYEr1GkOkZvrqLlqn1A0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/blondelle"
+                       comment: "blondelle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user serge present
+                     ansible.builtin.user:
+                       name: serge
+                       # password: "{{ 'password' | password_hash('sha512', 'c2VyZ2UtZGV2b3BzCg==serge') }}"
+                       password: '$1$YJ2Q34xi$bV8I.hlrSaG4f8gDz1yyC.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/serge"
+                       comment: "serge"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user grace2026 present
+                     ansible.builtin.user:
+                       name: grace2026
+                       # password: "{{ 'password' | password_hash('sha512', 'Z3JhY2UyMDI2LWRldm9wcwo=grace2026') }}"
+                       password: '$1$uBb/mxfX$4pGkeTe86krmg9Curd0oK/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/grace2026"
+                       comment: "grace2026"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user ernest present
+                     ansible.builtin.user:
+                       name: ernest
+                       # password: "{{ 'password' | password_hash('sha512', 'ZXJuZXN0LWRldm9wcwo=ernest') }}"
+                       password: '$1$3OGEqU5Q$50kMubGf1NAgpitVNR5Ig/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/ernest"
+                       comment: "ernest"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user Arsene present
+                     ansible.builtin.user:
+                       name: Arsene
+                       # password: "{{ 'password' | password_hash('sha512', 'QXJzZW5lLWRldm9wcwo=Arsene') }}"
+                       password: '$1$VVVL9UzT$dLbzLnR4YUBJlwfeRryrI.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/Arsene"
+                       comment: "Arsene"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user blaise present
+                     ansible.builtin.user:
+                       name: blaise
+                       # password: "{{ 'password' | password_hash('sha512', 'YmxhaXNlLWRldm9wcwo=blaise') }}"
+                       password: '$1$RpKQM6FM$symBS4uA7j48vKNvlcXlV0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/blaise"
+                       comment: "blaise"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user gueno present
+                     ansible.builtin.user:
+                       name: gueno
+                       # password: "{{ 'password' | password_hash('sha512', 'Z3Vlbm8tZGV2b3BzCg==gueno') }}"
+                       password: '$1$NMg60v5z$yNdq5riUVp9k.zGCefOGU1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/gueno"
+                       comment: "gueno"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user barbara present
+                     ansible.builtin.user:
+                       name: barbara
+                       # password: "{{ 'password' | password_hash('sha512', 'YmFyYmFyYS1kZXZvcHMKbarbara') }}"
+                       password: '$1$LJlxy1ZB$3xP2baTdr6sLEAIaIaax8/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/barbara"
+                       comment: "barbara"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user christelle present
+                     ansible.builtin.user:
+                       name: christelle
+                       # password: "{{ 'password' | password_hash('sha512', 'Y2hyaXN0ZWxsZS1kZXZvcHMKchristelle') }}"
+                       password: '$1$MjFafqec$uCe/Qi/ezDwL7l1.u6Nxb0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/christelle"
+                       comment: "christelle"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user henriette present
+                     ansible.builtin.user:
+                       name: henriette
+                       # password: "{{ 'password' | password_hash('sha512', 'aGVucmlldHRlLWRldm9wcwo=henriette') }}"
+                       password: '$1$5bHDLHau$gqYwHpDHs2Kc5oWS9kBcX0'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/henriette"
+                       comment: "henriette"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user ulrich present
+                     ansible.builtin.user:
+                       name: ulrich
+                       # password: "{{ 'password' | password_hash('sha512', 'dWxyaWNoLWRldm9wcwo=ulrich') }}"
+                       password: '$1$nXWNq.NL$9abDJRswlxHdFiPeoSHJN1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/ulrich"
+                       comment: "ulrich"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user lulu present
+                     ansible.builtin.user:
+                       name: lulu
+                       # password: "{{ 'password' | password_hash('sha512', 'bHVsdS1kZXZvcHMKlulu') }}"
+                       password: '$1$X.UH482b$XECFWFyzpqXhmE2qRBckr.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/lulu"
+                       comment: "lulu"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user cediane present
+                     ansible.builtin.user:
+                       name: cediane
+                       # password: "{{ 'password' | password_hash('sha512', 'Y2VkaWFuZS1kZXZvcHMKcediane') }}"
+                       password: '$1$Q.voRbQN$0.AWULM8DRJE5ds154bfj1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/cediane"
+                       comment: "cediane"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user johnathan present
+                     ansible.builtin.user:
+                       name: johnathan
+                       # password: "{{ 'password' | password_hash('sha512', 'am9obmF0aGFuLWRldm9wcwo=johnathan') }}"
+                       password: '$1$T3riJPRV$3IPw72Yaclj4sGzHem8ze.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/johnathan"
+                       comment: "johnathan"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user bellsinclair present
+                     ansible.builtin.user:
+                       name: bellsinclair
+                       # password: "{{ 'password' | password_hash('sha512', 'YmVsbHNpbmNsYWlyLWRldm9wcwo=bellsinclair') }}"
+                       password: '$1$sFhGwzCy$oEiPHtMcd3ju/UXWj1oJi1'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/bellsinclair"
+                       comment: "bellsinclair"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user francine present
+                     ansible.builtin.user:
+                       name: francine
+                       # password: "{{ 'password' | password_hash('sha512', 'ZnJhbmNpbmUtZGV2b3BzCg==francine') }}"
+                       password: '$1$JEA68PM7$j95fnp11Mrih5epK3fKWQ/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/francine"
+                       comment: "francine"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+                   - name: user aisha present
+                     ansible.builtin.user:
+                       name: aisha
+                       # password: "{{ 'password' | password_hash('sha512', 'YWlzaGEtZGV2b3BzCg==aisha') }}"
+                       password: '$1$mI23ExP8$YgNBQWF1FKRztnupXhPqP.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/aisha"
+                       comment: "aisha"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+               ###################################################################################
+               ##################################################################################################
+                   - name: user tia present
+                     ansible.builtin.user:
+                       name: tia
+                       # password: "{{ 'password' | password_hash('sha512', 'tia2022') }}"
+                       password: '$1$qncU1Dl4$0O44odjrTh9yIvDTC40kN.'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/tia"
+                       comment: "tia"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+               ###################################################################################
+               ##################################################################################################
+                   - name: user eric present
+                     ansible.builtin.user:
+                       name: eric
+                       # password: "{{ 'password' | password_hash('sha512', 'eric2022') }}"
+                       password: '$1$PtmPsw6d$074OzHEDHiY0SCkmkSU9g/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/eric"
+                       comment: "eric"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
+               ###################################################################################
+               ##################################################################################################
+                   - name: user s3minko present
+                     ansible.builtin.user:
+                       name: s3minko
+                       # password: "{{ 'password' | password_hash('sha512', 'czNtaW5rbzIwMjItZGV2b3BzCg==s3minko2022') }}"
+                       password: '$1$dbcA8KIv$fjP42BwbRuFxunRa9akG7/'
+                       groups:
+                         - docker
+               
+                       state: "present"
+                       shell: "/bin/bash"
+                       system: false
+                       create_home: true
+                       home: "/home/s3minko"
+                       comment: "s3minko"
+                       generate_ssh_key: true
+               ##################################################################################################
+               ##################################################################################################
